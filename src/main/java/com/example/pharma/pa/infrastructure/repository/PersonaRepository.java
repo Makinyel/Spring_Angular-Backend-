@@ -9,8 +9,8 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface PersonaRepository extends JpaRepository<PersonaDto,String> {
-    @Query(nativeQuery = true,value = "update persona_dto set nombre = : nombre, apellido = : apellido, " +
-            "ubicacion = : ubicacion,telefono = : telefono, email = : email, rol = : rol where id = : id")
+
+    @Query(nativeQuery = true, value = "update persona_dto set nombre = :nombre, apellido = :apellido, ubiacion =:ubicacion, telefono = :telefono, email = :email, rol = :rol where id = :id")
     @Modifying
     public void editPersona(@Param("nombre") String nombre,
                             @Param("apellido") String apellido,
