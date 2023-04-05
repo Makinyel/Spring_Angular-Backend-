@@ -9,6 +9,7 @@ import com.example.pharma.pa.infrastructure.repository.PersonaRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @AllArgsConstructor
@@ -21,5 +22,12 @@ public class PersonaGetAdapter implements PersonaGetService {
     public Persona getPersona(String id) {
         Optional<PersonaDto> personadto = personaRepository.findById(id);
         return personadto.map(personaMapper::toPersonaEntity).orElse(null);
+    }
+
+    @Override
+    public List<Persona> getAllPersonas() {
+        List<PersonaDto> listDto = personaRepository.findAll();
+        return listDto.stream().map(personaMapper::toPersonaEntity).toList();
+
     }
 }
