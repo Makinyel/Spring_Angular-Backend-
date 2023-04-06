@@ -4,7 +4,7 @@ import com.example.pharma.pa.application.PersonaDelete;
 import com.example.pharma.pa.application.PersonaEdit;
 import com.example.pharma.pa.application.PersonaGet;
 import com.example.pharma.pa.application.PersonaSave;
-import com.example.pharma.pa.domain.entities.Persona;
+import com.example.pharma.pa.domain.entities.Persona.Persona;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -22,25 +22,25 @@ public class PersonaController {
     private final PersonaGet personaGet;
     private final PersonaDelete personaDelete;
     private final PersonaEdit personaEdit;
-    @PostMapping(path = "/personaPost")
+    @PostMapping(path = "/persona")
     public ResponseEntity<Persona> savePersona(@RequestBody Persona persona) {
-        log.info("ESTA ENTRANDO");
         return new ResponseEntity<>(personaSave.savePersona(persona), HttpStatus.CREATED);
     }
-    @GetMapping
-    public ResponseEntity<Persona> getPersonaById(@RequestParam String id) {
+
+    @GetMapping(path = "/persona/{id}")
+    public ResponseEntity<Persona> getPersonaById(@PathVariable String id) {
         return ResponseEntity.ok(personaGet.getPersona(id));
     }
-    @GetMapping(path = "/personaAll")
+    @GetMapping(path = "/persona")
     public ResponseEntity<List<Persona>> getAllPersonas() {
         return ResponseEntity.ok(personaGet.getAllPersonas());
     }
-    @DeleteMapping(path = "/personaDelete")
-    public void deletePersona(@RequestParam String id) {
+    @DeleteMapping(path = "/persona/{id}")
+    public void deletePersona(@PathVariable String id) {
         personaDelete.deletePersona(id);
     }
 
-    @PutMapping(path = "/personaEdit")
+    @PutMapping(path = "/persona")
     public void editPersona(@RequestBody Persona persona){
         personaEdit.editPersona(persona);
     }

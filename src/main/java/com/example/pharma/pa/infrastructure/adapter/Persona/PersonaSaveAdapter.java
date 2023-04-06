@@ -1,7 +1,7 @@
-package com.example.pharma.pa.infrastructure.adapter;
+package com.example.pharma.pa.infrastructure.adapter.Persona;
 
-import com.example.pharma.pa.domain.entities.Persona;
-import com.example.pharma.pa.domain.service.PersonaSaveService;
+import com.example.pharma.pa.domain.entities.Persona.Persona;
+import com.example.pharma.pa.domain.service.Persona.PersonaSaveService;
 import com.example.pharma.pa.infrastructure.mapper.PersonaMapper;
 import com.example.pharma.pa.infrastructure.repository.PersonaRepository;
 import lombok.AllArgsConstructor;

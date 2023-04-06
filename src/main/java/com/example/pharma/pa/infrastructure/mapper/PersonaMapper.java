@@ -1,8 +1,7 @@
 package com.example.pharma.pa.infrastructure.mapper;
 
-import ch.qos.logback.core.model.ComponentModel;
-import com.example.pharma.pa.domain.entities.Persona;
-import com.example.pharma.pa.infrastructure.dto.PersonaDto;
+import com.example.pharma.pa.domain.entities.Persona.Persona;
+import com.example.pharma.pa.infrastructure.dto.Persona.PersonaDto;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "Spring")

@@ -1,7 +1,7 @@
 package com.example.pharma.pa.application;
 
-import com.example.pharma.pa.domain.entities.Persona;
-import com.example.pharma.pa.domain.service.PersonaEditService;
+import com.example.pharma.pa.domain.entities.Persona.Persona;
+import com.example.pharma.pa.domain.service.Persona.PersonaEditService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

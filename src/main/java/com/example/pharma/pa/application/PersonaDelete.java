@@ -1,6 +1,6 @@
 package com.example.pharma.pa.application;
 
-import com.example.pharma.pa.domain.service.PersonaDeleteService;
+import com.example.pharma.pa.domain.service.Persona.PersonaDeleteService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

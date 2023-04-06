@@ -1,6 +1,6 @@
-package com.example.pharma.pa.domain.service;
+package com.example.pharma.pa.domain.service.Persona;
 
-import com.example.pharma.pa.domain.entities.Persona;
+import com.example.pharma.pa.domain.entities.Persona.Persona;
 
 import java.util.List;
 

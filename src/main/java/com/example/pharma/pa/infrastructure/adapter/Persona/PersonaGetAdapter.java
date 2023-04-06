@@ -1,12 +1,12 @@
-package com.example.pharma.pa.infrastructure.adapter;
+package com.example.pharma.pa.infrastructure.adapter.Persona;
 
-import com.example.pharma.pa.application.PersonaGet;
-import com.example.pharma.pa.domain.entities.Persona;
-import com.example.pharma.pa.domain.service.PersonaGetService;
-import com.example.pharma.pa.infrastructure.dto.PersonaDto;
+import com.example.pharma.pa.domain.entities.Persona.Persona;
+import com.example.pharma.pa.domain.service.Persona.PersonaGetService;
+import com.example.pharma.pa.infrastructure.dto.Persona.PersonaDto;
 import com.example.pharma.pa.infrastructure.mapper.PersonaMapper;
 import com.example.pharma.pa.infrastructure.repository.PersonaRepository;
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -14,6 +14,7 @@ import java.util.Optional;
 
 @AllArgsConstructor
 @Service
+@Slf4j
 public class PersonaGetAdapter implements PersonaGetService {
 
     private final PersonaMapper personaMapper;

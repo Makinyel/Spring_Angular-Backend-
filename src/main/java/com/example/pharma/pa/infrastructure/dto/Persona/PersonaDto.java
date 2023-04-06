@@ -1,4 +1,4 @@
-package com.example.pharma.pa.infrastructure.dto;
+package com.example.pharma.pa.infrastructure.dto.Persona;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;

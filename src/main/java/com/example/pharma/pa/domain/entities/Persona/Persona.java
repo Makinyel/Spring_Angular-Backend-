@@ -1,4 +1,4 @@
-package com.example.pharma.pa.domain.entities;
+package com.example.pharma.pa.domain.entities.Persona;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

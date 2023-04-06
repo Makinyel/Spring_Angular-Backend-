@@ -1,6 +1,6 @@
-package com.example.pharma.pa.infrastructure.adapter;
+package com.example.pharma.pa.infrastructure.adapter.Persona;
 
-import com.example.pharma.pa.domain.service.PersonaDeleteService;
+import com.example.pharma.pa.domain.service.Persona.PersonaDeleteService;
 import com.example.pharma.pa.infrastructure.repository.PersonaRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
