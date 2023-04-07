@@ -1,6 +1,5 @@
 package com.example.pharma.pa.infrastructure.adapter.Persona;
 
-import com.example.pharma.pa.application.PersonaGet;
 import com.example.pharma.pa.domain.entities.Persona.Persona;
 import com.example.pharma.pa.domain.service.Persona.PersonaEditService;
 import com.example.pharma.pa.infrastructure.repository.PersonaRepository;

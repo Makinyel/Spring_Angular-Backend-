@@ -2,7 +2,7 @@ package com.example.pharma.pa.share;
 
 public enum ExceptionCode {
 
-    CARRO_NOT_FOUND("111","NOT_FOUND");
+    NOT_FOUND("111","NOT_FOUND");
     private final String code;
     private final String type;
 

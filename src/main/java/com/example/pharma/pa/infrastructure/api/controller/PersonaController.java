@@ -1,9 +1,9 @@
 package com.example.pharma.pa.infrastructure.api.controller;
 
-import com.example.pharma.pa.application.PersonaDelete;
-import com.example.pharma.pa.application.PersonaEdit;
-import com.example.pharma.pa.application.PersonaGet;
-import com.example.pharma.pa.application.PersonaSave;
+import com.example.pharma.pa.application.Persona.PersonaDelete;
+import com.example.pharma.pa.application.Persona.PersonaEdit;
+import com.example.pharma.pa.application.Persona.PersonaGet;
+import com.example.pharma.pa.application.Persona.PersonaSave;
 import com.example.pharma.pa.domain.entities.Persona.Persona;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -44,4 +44,7 @@ public class PersonaController {
     public void editPersona(@RequestBody Persona persona){
         personaEdit.editPersona(persona);
     }
+
+
+
 }

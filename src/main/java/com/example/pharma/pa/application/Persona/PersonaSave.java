@@ -1,4 +1,4 @@
-package com.example.pharma.pa.application;
+package com.example.pharma.pa.application.Persona;
 
 import com.example.pharma.pa.domain.entities.Persona.Persona;
 import com.example.pharma.pa.domain.service.Persona.PersonaSaveService;

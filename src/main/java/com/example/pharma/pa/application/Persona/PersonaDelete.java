@@ -1,6 +1,7 @@
-package com.example.pharma.pa.application;
+package com.example.pharma.pa.application.Persona;
 
 import com.example.pharma.pa.domain.service.Persona.PersonaDeleteService;
+import com.example.pharma.pa.infrastructure.api.controller.UniMedidaController;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -12,6 +13,5 @@ public class PersonaDelete {
     public void deletePersona(String id){
         personaDeleteService.deletePersona(id);
     }
-
 
 }
