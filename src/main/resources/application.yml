@@ -7,7 +7,7 @@ spring:
 spring:
   profile: local
   datasource:
-    url: jdbc:postgresql://localhost:5432/desarrollo
+    url: jdbc:postgresql://localhost:5432/spring_angular
     username: postgres
     password: 1041971977
     test-on-borrow: true
@@ -16,4 +16,4 @@ spring:
     show-sql: true
     hibernate:
       format-sql: true
-      ddl-auto: none
+      ddl-auto: update
